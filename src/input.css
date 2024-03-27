@@ -1,0 +1,99 @@
+
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700;800&family=Syne:wght@400;500;700;800&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  background:#3b4252;
+  
+}
+.img-bg {
+  height: 80px;
+  width: 120px;
+}
+
+.img-bg {
+  position: absolute;
+  background-color: white;
+  border-radius: 40%;
+  filter: blur(72px);
+  z-index: -1;
+  animation: pulse 4s cubic-bezier(0, 0, 0, 0.5) infinite;
+}
+
+@keyframes pulse {
+  50% {
+    transform: scale(1.5);
+  }
+}
+.nav{
+  padding: 0px 48px 0px ;
+  box-shadow: '0 16px 48px rgba(0,0,0,.175)';
+}
+
+h1 {
+  font-family: "Corinthia", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+a {
+  .hover:: aqua;
+
+}
+
+
+.corinthia-bold {
+  font-family: "Corinthia", cursive;
+  font-weight: 700;
+  font-style: normal;
+}
+bg-layers {
+  -webkit-animation: filter-animation 4s infinite;
+  animation: filter-animation 4s infinite;
+}
+
+.bg-scale {
+  -webkit-animation: filter-animation 8s infinite;
+  animation: filter-scale 8s infinite;
+}
+
+@-webkit-keyframes filter-animation {
+  0% {
+    -webkit-filter: hue-rotate(0deg);
+  }
+  50% {
+    -webkit-filter: hue-rotate(45deg);
+  }
+  
+  100% {
+    -webkit-filter: hue-rotate(0deg);
+  }
+}
+
+@keyframes filter-animation {
+  0% {
+    filter: hue-rotate(0deg);
+  }
+  50% {
+    filter: hue-rotate(45deg);
+  }
+  100% {
+    filter: hue-rotate(0deg);
+  }
+}
+
+@keyframes filter-scale {
+  0% {
+    transform:scale(1);
+  }
+  50% {
+    transform:scale(1.4);
+  }
+  100% {
+      transform:scale(.8);
+  }
+}
+-->
+

@@ -1,0 +1,19 @@
+{
+	"folders": [
+		{
+			"name": "portfoolio",
+			"path": ".."
+		},
+		{
+			"name": "arx bootcamp",
+			"path": "../../arx bootcamp"
+		},
+		{
+			"name": "Front",
+			"path": "../../Front"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "portfoolio"
+	}
+}
