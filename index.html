@@ -16,7 +16,7 @@
   
 
 
-  </head>
+  </header>
   <body class="dark-mode">
   
   
@@ -37,25 +37,39 @@
 
       
     
-      <div class="hidden lg:flex lg:gap-x-12 hover: text-sky-400">
-        <a href="/index.html" class="text-md font-semibold   text-white  hover:text-sky-400 ">Home</a>
-        <a href="./src/About.html " class="text-md font-semibold leading-6 text-white hover:sky-400">About me</a>
-        <a href="./src/skillSs.html" class="text-md font-semibold leading-6 text-white hover:sky-400">Skills</a>
-        <a href="./src/Certification.html" class="text-md font-semibold leading-6 text-white hover:sky-400">Certification</a>
-        <a href="./src/Contact.html" class="text-md font-semibold leading-6 text-white hover:sky-400">Contact me</a>
-
-        
-      </div>
+      <div class="hidden lg:flex lg:gap-x-12">
+        <div class="group relative">
+            <a href="/index.html" class="text-md font-semibold text-white hover:text-sky-400 transition-colors duration-150 ease-in-out relative">Home</a>
+            <span class="absolute left-0 top-full w-full h-0.5 bg-sky-400 dark:bg-sky-600 transition-all duration-200 opacity-0 group-hover:opacity-100"></span>
+        </div>
+        <div class="group relative">
+            <a href="./src/About.html" class="text-md font-semibold text-white hover:text-sky-400 transition-colors duration-150 ease-in-out relative">About me</a>
+            <span class="absolute left-0 top-full w-full h-0.5 bg-sky-400 dark:bg-sky-600 transition-all duration-200 opacity-0 group-hover:opacity-100"></span>
+        </div>
+        <div class="group relative">
+            <a href="./src/skillSs.html" class="text-md font-semibold text-white hover:text-sky-400 transition-colors duration-150 ease-in-out relative">Skills</a>
+            <span class="absolute left-0 top-full w-full h-0.5 bg-sky-400 dark:bg-sky-600 transition-all duration-200 opacity-0 group-hover:opacity-100"></span>
+        </div>
+        <div class="group relative">
+            <a href="./src/Certification.html" class="text-md font-semibold text-white hover:text-sky-400 transition-colors duration-150 ease-in-out relative">Certification</a>
+            <span class="absolute left-0 top-full w-full h-0.5 bg-sky-400 dark:bg-sky-600 transition-all duration-200 opacity-0 group-hover:opacity-100"></span>
+        </div>
+        <div class="group relative">
+            <a href="./src/Contact.html" class="text-md font-semibold text-white hover:text-sky-400 transition-colors duration-150 ease-in-out relative">Contact me</a>
+            <span class="absolute left-0 top-full w-full h-0.5 bg-sky-400 dark:bg-sky-600 transition-all duration-200 opacity-0 group-hover:opacity-100"></span>
+        </div>
+    </div>
+    
       <div class=" lg:flex lg:flex-1 lg:justify-end">
         <a  href="./src/g.pdf" download="g.pdf" class="px-2 py-2 scroll-px-1  font-medium text-center bg-gradient-to-r from-blue-500 to-sky-400 text-white  rounded-full transition-transform transform-gpu hover:-translate-y-1"     <span class="relative flex h-3 w-3 p-2">
           <span class="animate-ping absolute inline-flex h-full w-20 rounded-full bg-sky-400 opacity-50"></span>
           <span class="relative inline-flex rounded-full h-3 w-3 bg-sky-500"></span>
         </span>
           Dowlond Resume
+          
         </a>
-        <use xlink:href="#gentle-wave" x="48" y="3" fill="var(--clr-accent-300)"></use>
-        <br>
-        <svg id="mode-toggle" width="36" height="36" viewBox="-6 -6 36 36" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="right-0 stroke-sky-500 fill-sky-100 group-hover:stroke-sky-400 dark:stroke-gray-400 dark:fill-gray-400/20 dark:group-hover:stroke-gray-300"><g class="dark:opacity-4"><path d="M15 12a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z"></path><path d="M12 4v.01M17.66 6.345l-.007.007M20.005 12.005h-.01M17.66 17.665l-.007-.007M12 20.01V20M6.34 17.665l.007-.007M3.995 12.005h.01M6.34 6.344l.007.007" fill="none"></path></g><g class="opacity-0 dark:opacity-100"><path d="M16 12a4 4 0 1 1-8 0 4 4 0 0 1 8 0Z"></path><path d="M12 3v1M18.66 5.345l-.828.828M21.005 12.005h-1M18.66 18.665l-.828-.828M12 21.01V20M5.34 18.666l.835-.836M2.995 12.005h1.01M5.34 5.344l.835.836" fill="none"></path></g></svg>
+        
+       
   
       </div>
     </nav>
@@ -160,7 +174,7 @@
 
            
               
-<footer class="flex flex-col items-center bg-transparent shadow-bg text-center text-surface dark:bg-transparent-blur dark:text-white shadow-lg">
+<footer class="flex flex-col items-center  bg-transparent  text-center text-surface dark:bg-transparent-blur dark:text-white shadow-lg">
 <div class="container pt-0">
   <img class="h-20 w-auto" src="3-removebg-preview.png" alt="">
 
@@ -256,31 +270,10 @@
 
 
 
-<script>
-  
-  const scriptURL = 'https://script.google.com/macros/s/AKfycbyh0CDqQx-oKlLhItueuiih0mHwlFdbFLalzEyQyW4nviKutrjMBzCPvnwq_-WnWNPkuw/exec'
-  const form = document.forms['submit-to-google-sheet']
 
-  form.addEventListener('submit', e => {
-    e.preventDefault()
-    fetch(scriptURL, { method: 'POST', body: new FormData(form)})
-      .then(response => console.log('Success!', response))
-      .catch(error => console.error('Error!', error.message))
-  })
-
-  const modeToggle = document.getElementById('mode-toggle');
-
-// Add click event listener to toggle the mode
-modeToggle.addEventListener('click', function() {
-    // Toggle between light mode and dark mode by toggling classes on the body
-    document.body.classList.toggle('light-mode');
-    document.body.classList.toggle('dark-mode');
-});
-
-
-</script>  
                       
   
+</body>
 
     
     
@@ -290,6 +283,3 @@ modeToggle.addEventListener('click', function() {
 
 
 
-
-  </body>
-</html>
